@@ -403,15 +403,6 @@ flex-direction: column;
 
 }
 
-/* a{
-    text-decoration: none;
-}
-
-a:visited{
-    text-decoration: none;
-    color: var(--clr-ghost-white);
-}
- */
 .homeButtons{
     display: flex;
     justify-content: center;
@@ -568,4 +559,8 @@ a:visited{
 
 .button__img{
 
+}
+
+.deliverText{
+    padding: 8em 0 8em 0;
 }
