@@ -193,6 +193,7 @@
     padding: 0.5em;
 }
 .start__createAccount{ 
+    /* Ændrer farven på knappen så den er mere oppaque inden man klikker på den */
     background-color: hsl(from var(--clr-federal-blue) h s l / 0.9);;
     color: var(--clr-ghost-white);
 }
@@ -261,7 +262,9 @@
     font-size: var(--font-size--1);
     border-radius: 0 16px 16px 0;
     height: 32px;
+    /* Læs op på dette --------------- */
     max-width: calc(329px - 74px);
+
 }
 .phoneNumber__input::placeholder {
     color: #aaa;
@@ -400,15 +403,51 @@ flex-direction: column;
 
 }
 
-.homeButtons{
+/* a{
+    text-decoration: none;
+}
 
+a:visited{
+    text-decoration: none;
+    color: var(--clr-ghost-white);
+}
+ */
+.homeButtons{
+    display: flex;
+    justify-content: center;
+}
+/* Skal være så at den aktive har blå baggrundsfarve med hvid text, hvor den inaktive har hvid baggrund og blå text */
+.homeButton{
+    padding: 1em;
+    width: 150px;
+    background-color: var(--clr-federal-blue);
+    font-style: normal;
+    font-optical-sizing: auto;  
+    font-size: var(--font-size-0);  
+    text-decoration: none;
+    color: var(--clr-ghost-white);
 }
 
 .homeButtons__pickUp{
+    display: flex;
+    justify-content: center;
+    border-radius: 40px 0 0 40px;
+    font-weight: 600;
+    /* background-color: var(--clr-federal-blue); */
+    /* font-style: normal;
+    font-size: var(--font-size-0); 
+    color: var(--clr-ghost-white); */
 
 }
 
-.homeButtons__deliver{}
+.homeButtons__deliver{
+    border-radius: 0 40px 40px 0;
+    display: flex;
+    justify-content: center;
+    background-color: var(--clr-ghost-white);
+    color: var(--clr-federal-blue);
+    font-weight: 600;
+}
 
 .nærboksInfo__header {
     display: flex;
@@ -500,17 +539,18 @@ flex-direction: column;
 }
 
 .package__title{
-    font-size: 1.1250em;
+    font-size: var(--font-size-1);
     padding: 0.75em;
     font-weight: 550;
 }
 
 .package__number{
-
+    font-size: var(--font-size-0);
     padding: 0.75em;
 }
 
 .package__expiration{
+    font-size: var(--font-size-0);
     padding: 0.75em;
     color: red;
 }
