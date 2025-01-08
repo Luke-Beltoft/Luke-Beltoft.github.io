@@ -108,12 +108,15 @@
 
 /* common styling */
 .title{
+    grid-column: 2;
+    justify-self: center;
     font-weight: 500;
     color: var(--clr-federal-blue);
     filter: drop-shadow(4px rgba(0, 0, 0, 0.15));
     text-align: center;
     font-size: var(--font-size-1);
-    flex: 1;
+    /* flex: 1;
+    grid-column: span 2; */
 }
 .button{
     border-radius: 40px;
@@ -229,18 +232,29 @@
 }
 
 .headingContainer{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    position: relative;
+    width: 100%;
+
+    /* place-items: center; */
+    /* display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 100%; */
 }
 
 /* create account page */
 .backButton__svg{
     fill: var(--clr-federal-blue);
+    grid-column: 1; 
+    justify-self: start; 
+
 /*     position: absolute;
     inset: 13px 0 0 2%; */
 }
+
 .createAccount__phoneNumber {
     display: flex;
     align-items: center;
@@ -563,4 +577,9 @@ flex-direction: column;
 
 .deliverText{
     padding: 8em 0 8em 0;
+}
+
+.burgerMenu{
+    grid-column: 1; 
+    justify-self: start; 
 }
