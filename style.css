@@ -15,6 +15,11 @@
     .main {
         padding: 2em;
     }
+
+    .homeButtons{
+
+    }
+
 }
 
 @media (min-width: 1024px) {
@@ -196,8 +201,7 @@
     padding: 0.5em;
 }
 .start__createAccount{ 
-    /* Ændrer farven på knappen så den er mere oppaque inden man klikker på den */
-    background-color: hsl(from var(--clr-federal-blue) h s l / 0.9);;
+    background-color: var(--clr-federal-blue);
     color: var(--clr-ghost-white);
 }
 .start__createAccount:hover, .start__createAccount:active{
@@ -222,7 +226,7 @@
     font-size: var(--font-size--1);
 }
 .start__login{
-    background-color: hsl(from var(--clr-ghost-white) h s l / 0.9);
+    background-color:var(--clr-ghost-white);
     color: #000;
 }
 .start__login:hover, .start__login:active{
@@ -317,7 +321,7 @@
     color: var(--clr-federal-blue);
 }
 .createAccount__sendCode{
-    background-color: hsl(from var(--clr-federal-blue) h s l / 0.9);;
+    background-color: var(--clr-federal-blue);
     color: var(--clr-ghost-white);
 }
 
@@ -348,7 +352,7 @@
     text-align: center;
 }
 .activationCode__sendCode{
-    background-color: hsl(from var(--clr-federal-blue) h s l / 0.9);;
+    background-color: var(--clr-federal-blue);
     color: var(--clr-ghost-white);
 }
 .activationCode__resend{
@@ -440,12 +444,18 @@ flex-direction: column;
 /* Skal være så at den aktive har blå baggrundsfarve med hvid text, hvor den inaktive har hvid baggrund og blå text */
 .homeButton{
     padding: 1em;
-    width: 150px;
-    background-color: var(--clr-federal-blue);
+    background-color: var(--clr-ghost-white);
     font-style: normal;
     font-optical-sizing: auto;  
     font-size: var(--font-size-0);  
     text-decoration: none;
+    color: var(--clr-federal-blue);
+    flex-grow: 1; 
+    min-width: 150px;
+}
+
+.homeButton.active{
+    background-color: var(--clr-federal-blue);
     color: var(--clr-ghost-white);
 }
 
