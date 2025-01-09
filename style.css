@@ -115,13 +115,13 @@
 .title{
     grid-column: 2;
     justify-self: center;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--clr-federal-blue);
     filter: drop-shadow(4px rgba(0, 0, 0, 0.15));
     text-align: center;
     font-size: var(--font-size-1);
-    /* flex: 1;
-    grid-column: span 2; */
+    /* flex: 1; */
+
 }
 .button{
     border-radius: 40px;
@@ -149,7 +149,8 @@
     align-items: center;
     position: relative;
     /* Flex grow kunne måske være en løsning  */
-/*     flex-grow: 1; */
+    /* flex-grow: 1; */
+    /* Flex grow ødelægger layouted på mindre skærme og resolution på hero img er dårligt når den bliver stor */
 }
 .hero__logo{
     padding-block: 1em;
@@ -228,6 +229,7 @@
 .start__login{
     background-color:var(--clr-ghost-white);
     color: #000;
+    /* outline: 1px solid black; */
 }
 .start__login:hover, .start__login:active{
     background-color: var(--clr-ghost-white);
