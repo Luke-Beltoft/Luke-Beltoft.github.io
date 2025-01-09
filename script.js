@@ -14,3 +14,7 @@ document.querySelectorAll('.pincode__digit').forEach((input, index, inputs) => {
     });
 });
 
+document.querySelector('.burgerMenu img').addEventListener('click', function() {
+    document.getElementById('check').click();  // Toggles the checkbox
+});
+
