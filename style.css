@@ -650,3 +650,8 @@ flex-direction: column;
 .pickup__img{
     grid-column: 3;
 }
+
+.pickup__image{
+    height: 10%;
+    width: 100%;
+}
