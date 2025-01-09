@@ -158,8 +158,8 @@
 }
 .hero__image{
     z-index: 1;
-    height:80%;
-    width: 87%;
+    /* height:80%; */
+    width: 80%;
 }
 .hero__cloud {
     z-index: -2;
@@ -430,6 +430,10 @@ margin: auto;
 .guide{
     margin: auto;
     width: 100%;
+}
+
+.guide__image{
+    width: 90%;
 }
 
 /* Homepage */
