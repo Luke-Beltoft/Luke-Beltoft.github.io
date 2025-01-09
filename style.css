@@ -245,6 +245,22 @@
     width: 100%; */
 }
 
+/* a:link{
+    color: black;
+} */
+
+/* a:visited{
+    color: black;
+} */
+
+.yourPackages a:link{
+    color: black;
+}
+
+.yourPackages a:visited{
+    color: black;
+}
+
 /* create account page */
 .backButton__svg{
     fill: var(--clr-federal-blue);
@@ -582,4 +598,8 @@ flex-direction: column;
 .burgerMenu{
     grid-column: 1; 
     justify-self: start; 
+}
+
+.packageLink{
+    text-decoration: none;
 }
