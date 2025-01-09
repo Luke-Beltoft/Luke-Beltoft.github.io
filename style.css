@@ -158,7 +158,6 @@
 }
 .hero__image{
     z-index: 1;
-    /* height:80%; */
     width: 80%;
 }
 .hero__cloud {
@@ -447,7 +446,7 @@ flex-direction: column;
     display: flex;
     justify-content: center;
 }
-/* Skal være så at den aktive har blå baggrundsfarve med hvid text, hvor den inaktive har hvid baggrund og blå text */
+
 .homeButton{
     padding: 1em;
     background-color: var(--clr-ghost-white);
@@ -481,9 +480,10 @@ flex-direction: column;
     border-radius: 0 40px 40px 0;
     display: flex;
     justify-content: center;
-    background-color: var(--clr-ghost-white);
-    color: var(--clr-federal-blue);
     font-weight: 600;
+    /* background-color: var(--clr-ghost-white);
+    color: var(--clr-federal-blue); */
+
 }
 
 .nærboksInfo__header {
