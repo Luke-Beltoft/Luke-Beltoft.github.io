@@ -110,7 +110,7 @@
 .title{
     grid-column: 2;
     justify-self: center;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--clr-federal-blue);
     filter: drop-shadow(4px rgba(0, 0, 0, 0.15));
     text-align: center;
@@ -539,9 +539,9 @@ flex-direction: column;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.yourPackages{
+/* .yourPackages{
     width: 100%;
-}
+} */
 
 .package{
     display: flex;
